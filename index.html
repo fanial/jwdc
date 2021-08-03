@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Junior Web Developer</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <div class="row">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark col-md-12">
+
+      <div class="container">
+        <a class="navbar-brand" href="#">Digital Talent</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Form Grup
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#login">Login</a>
+                <a class="dropdown-item" href="#regis">Register</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+  <!-- end of navbar -->
+
+  <div class="row">
+    <!-- content -->
+    <div class="main col-12 col-md-8 ">
+      <h1>Konten</h1>
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="login">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                Login Form Grup
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" aria-labelledby="login" data-parent="#accordion">
+            <div class="card-body">
+              <form>
+                <h1 class="h3 mb-3 font-weight-normal">Login</h1>
+                <h6>Please fill this form for Log in</h6>
+                <hr>
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" id="inputUsername" placeholder="Username" required=""
+                    autofocus="">
+                  <div class="invalid-feedback">
+                    Please provide a valid username
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="username">Password</label>
+                  <input type="password" class="form-control" id="inputPass" placeholder="Password" required=""
+                    autofocus="">
+                  <div class="invalid-feedback">
+                    Please provide a valid username
+                  </div>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="regis">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="false" aria-controls="collapseTwo">
+                Register Form Grup
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="regis" data-parent="#accordion">
+            <div class="card-body">
+              <form>
+                <h1 class="h3 mb-3 font-weight-normal">Register</h1>
+                <h6>Please fill this form for create account</h6>
+                <hr>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required=""
+                    autofocus="">
+                  <div class="invalid-feedback">
+                    Please provide a valid email
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" id="inputUsername" placeholder="Username" required=""
+                    autofocus="">
+                  <div class="invalid-feedback">
+                    Please provide a valid username
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="username">Password</label>
+                  <input type="password" class="form-control" id="inputPass" placeholder="Password" required=""
+                    autofocus="">
+                  <div class="invalid-feedback">
+                    Please provide a valid username
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="alamat">Address</label>
+                  <input type="text area" class="form-control" id="inputAlamat" placeholder="Address" required=""
+                    autofocus="">
+                  <div class="invalid-feedback">
+                    Please fill this row
+                  </div>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of content -->
+
+    <!-- sidebar -->
+    <div class="sidebar col-12 col-md-4 bg-light ">
+      <div class="container">
+        <h3>About <strong>Me</strong></h3>
+        <p>Hallo! Nama lengkap saya Fani Aghistiya Lestari, atau bisa dipanggil Fani. Lahir di Majalengka, dan sekarang
+          menetap di Bandung.
+          <br>
+          Saat ini sedang menempuh pendidikan S1 di STMIK Mardira Indonesia, Program Studi Teknik Informatika dengan
+          konsentrasi Rekayasa Perangkat Lunak.
+          <br>
+          Aktif berorganisasi, di UKM Creative Student Association sebagai anggota, dan pernah menjabat sebagai ketua
+          umum di organisasi siswa pencinta alam SMK.
+          <br>
+          Memulai dunia pemrograman dengan mempelajari OOP PHP dan Java, project pertama yang dibuat adalah sistem
+          informasi sekolah berbasis web menggunakan PHP, Bootstrap, dan database.</p>
+        <h4>Get <strong>In Touch</strong></h4>
+        <p>
+          <a href="https://twitter.com/fanial_32"><button type="button"
+              class="btn btn-outline-info">Twitter</button></a>
+          <a href="https://instagram.com/fanial_32"><button type="button"
+              class="btn btn-outline-danger">Instagram</button></a>
+          <a href="https://www.linkedin.com/in/fani-aghistiya-lestari-949852152"><button type="button"
+              class="btn btn-outline-primary">Linkedin</button></a>
+          <a href="https://github.com/fanial"><button type="button"
+              class="btn btn-outline-secondary">GitHub</button></a>
+        </p>
+      </div>
+
+    </div>
+    <!-- end of sidebar -->
+  </div>
+  </div>
+  <!-- footer -->
+  <div class="row mb-5">
+    <p class="col-12 text-center">
+      Copyright &copy; <a href="https://github.com/fanial/" target="_blank" class="text-primary">Fani
+        Aghistiya Lestari</a>
+    </p>
+  </div>
+  <!-- end of footer -->
+
+  <!-- javascript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
