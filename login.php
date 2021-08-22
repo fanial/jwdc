@@ -1,59 +1,77 @@
 <!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Admin Theme v3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- styles -->
+    <link href="css/styles.css" rel="stylesheet">
 
-<html lang="en">
-<link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
-<link type="text/css" rel="stylesheet" id="dark-mode-general-link">
-<style lang="en" type="text/css" id="dark-mode-custom-style"></style>
-<style lang="en" type="text/css" id="dark-mode-native-style"></style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="login-bg">
+  	<div class="header">
+	     <div class="container">
+	        <div class="row">
+	           <div class="col-md-12">
+	              <!-- Logo -->
+	              <div class="logo">
+	                 <h1><a href="index.html">Bootstrap Admin Theme</a></h1>
+	              </div>
+	           </div>
+	        </div>
+	     </div>
+	</div>
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<div class="page-content container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<div class="login-wrapper">
+			        <div class="box">
+			            <div class="content-wrap">
+			                <h6>Sign In</h6>
+			                <div class="social">
+	                            <a class="face_login" href="#">
+	                                <span class="face_icon">
+	                                    <img src="images/facebook.png" alt="fb">
+	                                </span>
+	                                <span class="text">Sign in with Facebook</span>
+	                            </a>
+	                            <div class="division">
+	                                <hr class="left">
+	                                <span>or</span>
+	                                <hr class="right">
+	                            </div>
+	                        </div>
+			                <input class="form-control" type="text" placeholder="E-mail address">
+			                <input class="form-control" type="password" placeholder="Password">
+			                <div class="action">
+			                    <a class="btn btn-primary signup" href="index.html">Login</a>
+			                </div>                
+			            </div>
+			        </div>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Fani's Library</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
-
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+			        <div class="already">
+			            <p>Don't have an account yet?</p>
+			            <a href="signup.html">Sign Up</a>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
 
 
-    <!-- Custom styles for this template -->
-    <link href="css/signin.css" rel="stylesheet">
 
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-</head>
-
-<body class="text-center">
-
-    <div class="card">
-        <div class="card-body">
-            <form class="form-signin" action="fc_login.php" method="POST" enctype="multipart/form-data">
-                <img class="mb-4" src="images/logo-bn.png" alt="logo" width="auto" height="92">
-                <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-                <?php
-                if (isset($_GET['pesan'])) {
-                    if ($_GET['pesan'] == "gagal") {
-                        echo "<div class='alert alert-danger' role='alert'>Username dan Password tidak sesuai!</div>";
-                    }
-                }
-                ?>
-                <label for="username" class="sr-only">Username</label>
-                <input type="text" id="username" class="form-control" placeholder="Username" required="" autofocus="">
-
-                <label for="inputPassword" class="sr-only">Password</label>
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-
-                <button id="buttonSubmit" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-                <p class="mt-5 mb-3 text-muted">Copyright &copy; <a href="https://github.com/fanial/" target="_blank" class="text-primary">Fani
-                        Aghistiya Lestari</a></p>
-            </form>
-        </div>
-    </div>
-
-</body>
-
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>
