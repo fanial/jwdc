@@ -9,7 +9,7 @@
     $password = md5($_POST["password"]);
 
     // seleksi data user dengan username dan password apakah sesuai atau tidak
-    $login = mysqli_query($koneksi, "SELECT*FROM user WHERE username='$username' AND password='$password'");
+    $login = mysqli_query($koneksi, "SELECT*FROM tbuser WHERE username='$username' AND password='$password'");
 
     // hitung jumlah data yang ditemukan dari form login
     $cek = mysqli_num_rows($login);
@@ -24,12 +24,12 @@
             $_SESSION['level'] = "admin";
             // pindahkan ke halaman dashboard admin
             header("location:dashboard.php");
-        } else if ($data['level'] == "siswa") {
+        } else if ($data['level'] == "anggota") {
             // buat session login dan username agar keamanan lebih tinggi
             $_SESSION['username'] = $username;
             $_SESSION['level'] = "anggota";
             // pindahkan ke halaman dashboard pengurus
-            header("location:anggota.php");
+            header("location:dashboard-anggota.php");
         } else {
             // pindahkan ke halaman login kembali
             header("location:login.php?pesan=gagal");
@@ -37,4 +37,3 @@
     } else {
         header("location:login.php?pesan=gagal");
     }
-    ?>

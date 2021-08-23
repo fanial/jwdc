@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Bootstrap Admin Theme v3</title>
+    <title>Sipus E-book</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -39,13 +39,13 @@
                         <div class="content-wrap">
                             <img class="mb-4" src="images/favicon-96x96.png" alt="logo aplikasi" width="85" height="85">
                             <h6>Sign In</h6>
-                                <?php
-                                if (isset($_GET['pesan'])) {
-                                    if ($_GET['pesan'] == "gagal") {
-                                        echo "<div class='alert'>Username dan Password tidak sesuai!</div>";
-                                    }
+                            <?php
+                            if (isset($_GET['pesan'])) {
+                                if ($_GET['pesan'] == "gagal") {
+                                    echo "<div class='alert'>Username dan Password tidak sesuai!</div>";
                                 }
-                                ?>
+                            }
+                            ?>
                             <form action="ceklogin.php" method="post">
                                 <input class="form-control" name="username" type="text" placeholder="Username">
                                 <input class="form-control" name="password" type="password" placeholder="Password">
