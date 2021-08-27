@@ -3,7 +3,6 @@
 include '../koneksi.php';
 
 // Mengambil data dari form lalu ditampung didalam variabel
-$id_buku = $_POST['id_buku'];
 $judul = $_POST['judul'];
 $pengarang = $_POST['pengarang'];
 $penerbit = $_POST['penerbit'];
@@ -32,12 +31,12 @@ if ($foto_size > 2097152) {
         // Mengecek apakah Ekstensi file sesuai dengan Ekstensi file yg diuplaod
         if (in_array($ekstensi, $ekstensi_izin) === true) {
             if (move_uploaded_file($temp, $path)) {
-                $cek = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM tbbuku WHERE id_buku='$id_buku'"));
+                $cek = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM tbbuku WHERE judul='$judul'"));
                 if ($cek > 0) {
                     header("location:../create-buku.php?pesan=tersedia");
                 } else {
                     // Query untuk memasukan data kedalam table
-                    $query = mysqli_query($koneksi, "INSERT INTO tbbuku VALUES ('$id_buku', '$judul', '$pengarang', '$penerbit','$kategori', '$fotobaru', '$statusb')");
+                    $query = mysqli_query($koneksi, "INSERT INTO tbbuku VALUES ('', '$judul', '$pengarang', '$penerbit','$kategori', '$fotobaru', '$statusb')");
 
                     // Mengecek apakah data gagal diinput atau tidak
                     if ($query) {
